@@ -12,3 +12,5 @@
         container_root: 'SITE2_FABRIC'
         configlets_prefix: 'AVD'
         state: present
+        device_apply_mode: strict
+        execute_tasks: true

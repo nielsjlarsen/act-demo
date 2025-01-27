@@ -4,20 +4,33 @@ SITE1:
     CVP:
       hosts:
         cvp:
+          ansible_host: 192.168.0.5
     SITE1_FABRIC:
       children:
         SITE1_SPINES:
           hosts:
-            s1-spine1:
-            s1-spine2:
+            dc1-spine1:
+              type: spine
+            dc1-spine2:
+              type: spine
         SITE1_LEAFS:
           hosts:
-            s1-leaf1:
-            s1-leaf2:
-            s1-leaf3:
-            s1-leaf4:
-            s1-brdr1:
-            s1-brdr2:
+            dc1-leaf1:
+              type: l3leaf
+            dc1-leaf2:
+              type: l3leaf
+            dc1-leaf3:
+              type: l3leaf
+            dc1-leaf4:
+              type: l3leaf
+            dc1-brdr1:
+              type: l3leaf
+            dc1-brdr2:
+              type: l3leaf
+            dc1-l2leaf1:
+              type: l2leaf
+            dc1-l2leaf2:
+              type: l2leaf
     SITE1_NETWORK_SERVICES:
       children:
         SITE1_SPINES:
