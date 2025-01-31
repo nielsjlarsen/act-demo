@@ -64,6 +64,12 @@ daemon_terminattr:
   # Exclude paths from the shared memory table
   smashexcludes: "ale,flexCounter,hardware,kni,pulse,strata"
 
+# Shutdown unused interfaces by default and set default MTU
+interface_defaults:
+  ethernet:
+    shutdown: true
+  mtu: 9214
+
 # Point to Point Links MTU Override for Lab
 p2p_uplinks_mtu: 1500
 

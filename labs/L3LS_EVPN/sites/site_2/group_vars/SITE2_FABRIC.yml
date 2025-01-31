@@ -53,21 +53,21 @@ l3leaf:
           uplink_switch_interfaces:
             - Ethernet3
             - Ethernet3
-    - group: DC2_RACK2
-      bgp_as: 65202
-      nodes:
-        - name: dc2-leaf3
-          id: 3
-          mgmt_ip: 192.168.0.24/24
-          uplink_switch_interfaces:
-            - Ethernet4
-            - Ethernet4
-        - name: dc2-leaf4
-          id: 4
-          mgmt_ip: 192.168.0.25/24
-          uplink_switch_interfaces:
-            - Ethernet5
-            - Ethernet5
+    # - group: DC2_RACK2
+    #   bgp_as: 65202
+    #   nodes:
+    #     - name: dc2-leaf3
+    #       id: 3
+    #       mgmt_ip: 192.168.0.24/24
+    #       uplink_switch_interfaces:
+    #         - Ethernet4
+    #         - Ethernet4
+    #     - name: dc2-leaf4
+    #       id: 4
+    #       mgmt_ip: 192.168.0.25/24
+    #       uplink_switch_interfaces:
+    #         - Ethernet5
+    #         - Ethernet5
     - group: DC2_BRDR
       bgp_as: 65203
       # evpn_gateway:
