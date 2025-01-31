@@ -27,10 +27,6 @@ SITE1:
               type: l3leaf
             dc1-brdr2:
               type: l3leaf
-            dc1-l2leaf1:
-              type: l2leaf
-            dc1-l2leaf2:
-              type: l2leaf
     SITE1_NETWORK_SERVICES:
       children:
         SITE1_SPINES:
