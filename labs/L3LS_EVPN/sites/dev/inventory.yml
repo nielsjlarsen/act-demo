@@ -1,0 +1,33 @@
+---
+DEV:
+  children:
+    CVP:
+      hosts:
+        cvp:
+          ansible_host: 192.168.0.5
+    DEV_FABRIC:
+      children:
+        DEV_SPINES:
+          hosts:
+            dev-spine1:
+              type: spine
+            dev-spine2:
+              type: spine
+        DEV_LEAFS:
+          hosts:
+            dev-leaf1:
+              type: l3leaf
+            dev-leaf2:
+              type: l3leaf
+            dev-leaf3:
+              type: l3leaf
+            dev-leaf4:
+              type: l3leaf
+    DEV_NETWORK_SERVICES:
+      children:
+        DEV_SPINES:
+        DEV_LEAFS:
+    DEV_CONNECTED_ENDPOINTS:
+      children:
+        DEV_SPINES:
+        DEV_LEAFS:

@@ -20,12 +20,12 @@
 # # Site1 RACK1 Endpoints
 # # --------------------------------------------------------#
 
-#   - name: dc1-host1                                     # Server name
+#   - name: dev-host1                                     # Server name
 #     rack: RACK1                                         # Informational RACK (optional)
 #     adapters:
 #       - endpoint_ports: [ eth1, eth2 ]                        # Server port to connect (optional)
 #         switch_ports: [ Ethernet4, Ethernet4 ]                     # Switch port to connect server (required)
-#         switches: [ dc1-leaf1, dc1-leaf2 ]                       # Switch to connect server (required)
+#         switches: [ dev-leaf1, dev-leaf2 ]                       # Switch to connect server (required)
 #         profile: PP-VLAN10                              # Port profile to apply (required)
 
 
@@ -33,10 +33,10 @@
 # # Site1 RACK2 Endpoints
 # # --------------------------------------------------------#
 
-#   - name: dc1-host2                                     # Server name
+#   - name: dev-host2                                     # Server name
 #     rack: RACK2                                         # Informational RACK (optional)
 #     adapters:
 #       - endpoint_ports: [ eth1, eth2 ]                        # Server port to connect (optional)
 #         switch_ports: [ Ethernet4 ]                     # Switch port to connect server (required)
-#         switches: [ dc1-leaf3, dc1-leaf4 ]                       # Switch to connect server (required)
+#         switches: [ dev-leaf3, dev-leaf4 ]                       # Switch to connect server (required)
 #         profile: PP-VLAN20                              # Port profile to apply (required)
